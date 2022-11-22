@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/abu_abu2"
+    tools:context=".ui.story.AddStoryActivity">
+
+    <ImageView
+        android:id="@+id/iv_item_photo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/gambar_story"
+        android:src="@drawable/image" />
+
+    <RelativeLayout
+        android:id="@+id/layout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_item_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <com.zam.storyapp.ui.customview.Button
+            android:id="@+id/button_camera"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="@string/kamera" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_gallery"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/button_camera"
+            android:background="@drawable/custom_button"
+            android:text="@string/galeri" />
+    </RelativeLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_button"
+        android:layout_marginTop="20dp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_description"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="top"
+            android:hint="@string/deskripsi" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_below="@+id/layout_description"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/tambah_lokasi"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch2"
+        android:layout_centerHorizontal="true" />
+
+    <com.zam.storyapp.ui.customview.Button
+        android:id="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/loading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/unggah" />
+</RelativeLayout>

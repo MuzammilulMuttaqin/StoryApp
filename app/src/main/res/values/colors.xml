@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ungu">#6C63FF</color>
+    <color name="ungu_lebih_muda">#9891FF</color>
+    <color name="pink_200">#FF8FAF</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="abu_abu">#808080</color>
+    <color name="abu_abu2">#E6E6E6</color>
+    <color name="abu_abu3">#2C000000</color>
+    <color name="transparant">#00555555</color>
+
+
+
+</resources>
