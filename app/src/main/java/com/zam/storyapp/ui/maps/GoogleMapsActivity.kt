@@ -43,7 +43,6 @@ class GoogleMapsActivity : AppCompatActivity(), OnMapReadyCallback {
         iteratorPage = 1
         supportActionBar?.title = "Maps Story"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        print("EROROOOO BROOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO")
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
